@@ -85,6 +85,6 @@ def create_daily_fishnets(statename):
 
         del fishnet['geometry'], fishnet['points']
 
-        fishnet.to_csv(f'{finaloutputbasepath}/{statename}/{stateabbv}_{year}_DailyPM2_5_vectorize.csv', index=False)
+        fishnet.to_csv(f'{finaloutputbasepath}/{statename}/{stateabbv}_{year}_DailyPM25.csv', index=False)
     f.write(f'{statename}: {default_timer() - state_time}\n')
     f.close()
